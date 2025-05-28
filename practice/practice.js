@@ -55,7 +55,15 @@ let questions = [
         c: "\\( 2.16 \\)",
         d: "\\( -1.204 \\)",
         res: "c"
-    }
+    },
+    {
+        question: " \\( f(x)=4x^2 \\) for the interval \\( [2, 5] \\) which satisfies the mean value theorem (approx). ",
+        a: "\\( 5.5 \\)",
+        b: "\\(  2.5 \\)",
+        c: "\\( 3.5 \\)",
+        d: "\\( 4.5 \\)",
+        res: "c"
+    },
 ];
 
 let currentQuestion = 0;
