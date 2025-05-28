@@ -6,16 +6,17 @@
   const functions = ['sin', 'cos', 'tan', 'ln', '√'];
 
   function fixExpression(expr) {
-    expr = expr.replace(/π/g, "Math.PI")
-               .replace(/√/g, "Math.sqrt")
-               .replace(/sin/g, "Math.sin")
-               .replace(/cos/g, "Math.cos")
-               .replace(/tan/g, "Math.tan")
-               .replace(/ln/g, "Math.log")
-               .replace(/\^/g, "**")
-               .replace(/(\d+)(!)/g, (fullExper, n, mark) => !Number.isInteger(n) ? factorial(Number(n)) : "");
+    expr = expr.replace(/(\d|\))(?=π|sin|cos|tan|ln|√)/g, "$1*")
+              .replace(/(\d|\))(?=\()/g, "$1*")
+              .replace(/π/g, "Math.PI")
+              .replace(/√/g, "Math.sqrt")
+              .replace(/sin/g, "Math.sin")
+              .replace(/cos/g, "Math.cos")
+              .replace(/tan/g, "Math.tan")
+              .replace(/ln/g, "Math.log")
+              .replace(/\^/g, "**")
+              .replace(/(\d+)(!)/g, (fullExper, n, mark) => !Number.isInteger(n) ? factorial(Number(n)) : "");
 
-    // Add closing parentheses if needed
     let open = (expr.match(/\(/g) || []).length;
     let close = (expr.match(/\)/g) || []).length;
     while (close < open) {

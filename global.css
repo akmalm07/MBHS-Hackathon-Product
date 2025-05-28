@@ -6,13 +6,20 @@
     --nav-bg: #4c4c4d;
     --white: #ffffff;
     --bg-color: #f0f0f0;
+    --valid-color: #28a745;
+    --invalid-color: #dc3545;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-
+body {
+    font-family: 'Segoe UI', sans-serif;      
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
 
 /* Navbar */
 .navbar {

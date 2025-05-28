@@ -1,10 +1,6 @@
 
 body {
   background-color: var(--bg-color);
-  font-family: 'Segoe UI', sans-serif;      
-  height: 100vh;
-  margin: 0;
-  overflow-x: hidden;
 }
 
 .calc-page {

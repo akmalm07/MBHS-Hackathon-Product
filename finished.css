@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: #222;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Permanent Marker', cursive;
+  }
+
+.graffiti-container {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+  }
+
+.graffiti {
+    position: absolute;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    mix-blend-mode: screen;
+    user-select: none;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    
+  }
+
+.color1 { 
+    color: #FF3F8E; /*Colors selected byt ChatGPT*/
+    top: 10%; left: 5%; 
+    transform: rotate(-10deg);
+}
+
+.color2 { 
+    color: #04C2C9; 
+    top: 20%; left: 70%; 
+    transform: rotate(8deg);
+}
+
+.color3 { 
+    color: #2E55C1; 
+    top: 50%; left: 30%; 
+    transform: rotate(-15deg);
+}
+
+.color4 { 
+    color: #F6D743; 
+    top: 65%; left: 80%; 
+    transform: rotate(12deg);
+}
+
+.color5 { 
+    color: #FF6F59; 
+    top: 70%; left: 6%; 
+    transform: rotate(7deg);
+}
+
+.color6 { 
+    color: #1B998B; 
+    top: 35%; left: 50%; 
+    transform: rotate(5deg);
+}

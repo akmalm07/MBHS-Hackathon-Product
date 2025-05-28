@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Math Fun</title>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+        <link href="../global.css" rel="stylesheet" type="text/css">
+        <link href="practice.css" rel="stylesheet" type="text/css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <img src="logo.png" alt="Math Fun Logo" class="logo">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="../calc/calc.html"  target="_blank">Calculator</a></li>
+                    <li><a href="practice.html">Practice</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <h4 class="question">#<span id="question-num"></span>. <span id="question"></span></h4>
+        <form class="multiple-choice" style="margin-top: 10vh;">
+            <label>
+                <input type="radio" name="choice" value="a">
+                A. <span id="mult-choice-a"></span>
+            </label>
+            <label>
+                <input type="radio" name="choice" value="b">
+                B. <span id="mult-choice-b"></span>
+            </label>
+            <label>
+                <input type="radio" name="choice" value="c">
+                C. <span id="mult-choice-c"></span>
+            </label>
+            <label>
+                <input type="radio" name="choice" value="d">
+                D. <span id="mult-choice-d"></span>
+            </label>
+
+            <br><br>
+            <button id="submit-btn">Submit</button>
+        
+        </form>
+
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+
+            <div id="notification" class="notification">
+            <p id="notification-message"></p>
+            </div>
+
+            <script src="practice.js"></script>     
+    </body>
+</html>
