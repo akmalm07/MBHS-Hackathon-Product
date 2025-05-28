@@ -39,8 +39,8 @@
 Contributions, issues, and suggestions are welcome!  
 Feel free to fork this project and submit a pull request.
 
-Web developer: [Akmal Mukhamadiev](akmalm2@nycstudents.net)
-Web Architect: [Maximilian Geller]()
+- Web developer: [Akmal Mukhamadiev](akmalm2@nycstudents.net)
+- Web Architect: [Maximilian Geller]()
 
 ## 📜 Sources
 
