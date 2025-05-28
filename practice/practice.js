@@ -39,6 +39,22 @@ let questions = [
         c: "\\( 5 \\)",
         d: "\\( 22 \\)",
         res: "b"
+    },
+    {
+        question: "What is the Chain Rule for deriving \\( f(g(x)) \\)?",
+        a: "\\( f'(g'(x)) \\)",
+        b: "\\( f(g'(x)) \\)",
+        c: "\\( f(x) g'(x) \\)",
+        d: "\\( f'(g(x)) g'(x) \\)",
+        res: "d"
+    },
+    {
+        question: "Integral of the constant function \\( f(x) = k \\) is: ",
+        a: "\\( -6.3 \\)",
+        b: "\\(  -0.9 \\)",
+        c: "\\( 2.16 \\)",
+        d: "\\( -1.204 \\)",
+        res: "c"
     }
 ];
 
@@ -76,7 +92,7 @@ submitBtn.addEventListener('click', (event) => {
     const selectedInput = document.querySelector('input[name="choice"]:checked');
 
     if (!selectedInput) {
-        alert("Please select an answer.");
+        showNotification("Pease select an answer", "error");
         return;
     }
 
@@ -96,9 +112,13 @@ submitBtn.addEventListener('click', (event) => {
         } else {
             updateProgressBar(currentQuestion);
             showNotification(`Quiz complete! You got a ${totalCorrect}/${questions.length}`, "success");
-
+            
             submitBtn.disabled = true;
             document.querySelectorAll('input[name="choice"]').forEach(input => input.disabled = true);
+
+            setTimeout(() => {
+            window.location.href = "finished.html";
+            }, 2000); 
         }
     } else {
         firstTime = false;
