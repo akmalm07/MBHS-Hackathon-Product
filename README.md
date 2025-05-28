@@ -42,7 +42,7 @@ Feel free to fork this project and submit a pull request.
 ## 📜 Sources
 
 - [ChatGPT](https://chatgpt.com): For generating user friendly colors
-- [Freepngimg.com](https://freepngimg.com/png/126062-blue-abstract-pic-texture-hq-image-free): For the start page background
+- [Freepngimg](https://freepngimg.com/png/126062-blue-abstract-pic-texture-hq-image-free): For the start page background
 - [Flaticon](https://www.flaticon.com): For icons 
 
 ## 🔑 License
